@@ -1,0 +1,127 @@
+﻿Build started 2017-01-12 14:31:58.
+     1>Project "C:\Users\Michał\Documents\Visual Studio 2013\Projects\kola_lokomotywy\kola_lokomotywy.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Camera.cpp main.cpp shprogram.cpp Wheel.cpp
+         Camera.cpp
+         main.cpp
+     1>main.cpp(441): warning C4018: '<' : signed/unsigned mismatch
+         shprogram.cpp
+         Wheel.cpp
+     1>Wheel.cpp(27): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>Wheel.cpp(28): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>Wheel.cpp(29): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>Wheel.cpp(32): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>Wheel.cpp(33): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>Wheel.cpp(47): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>Wheel.cpp(48): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Michał\Documents\Visual Studio 2013\Projects\kola_lokomotywy\Release\kola_lokomotywy.exe" /INCREMENTAL:NO /NOLOGO opengl32.lib glfw3.lib glew32s.lib soil.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:libcmt.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Michał\Documents\Visual Studio 2013\Projects\kola_lokomotywy\Release\kola_lokomotywy.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Michał\Documents\Visual Studio 2013\Projects\kola_lokomotywy\Release\kola_lokomotywy.lib" /MACHINE:X86 /SAFESEH Release\Camera.obj
+         Release\main.obj
+         Release\shprogram.obj
+         Release\Wheel.obj
+     1>glfw3.lib(monitor.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+     1>glfw3.lib(win32_window.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+     1>glfw3.lib(wgl_context.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+     1>glfw3.lib(winmm_joystick.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+     1>glfw3.lib(win32_monitor.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+     1>Camera.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+     1>glfw3.lib(window.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+     1>glfw3.lib(init.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+     1>glfw3.lib(context.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+     1>Camera.obj : error LNK2001: unresolved external symbol __imp___hypot
+     1>main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual char const * __thiscall std::exception::what(void)const " (__imp_?what@exception@std@@UBEPBDXZ)
+     1>main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall std::exception::~exception(void)" (__imp_??1exception@std@@UAE@XZ)
+     1>main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall std::exception::exception(char const * const &)" (__imp_??0exception@std@@QAE@ABQBD@Z)
+     1>main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall std::exception::exception(class std::exception const &)" (__imp_??0exception@std@@QAE@ABV01@@Z)
+     1>main.obj : error LNK2001: unresolved external symbol __imp__memmove
+     1>main.obj : error LNK2001: unresolved external symbol _atexit
+     1>msvcprt.lib(locale0_implib.obj) : error LNK2001: unresolved external symbol _atexit
+     1>main.obj : error LNK2001: unresolved external symbol __purecall
+     1>main.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *)" (??3@YAXPAX@Z)
+     1>msvcprt.lib(locale0_implib.obj) : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *)" (??3@YAXPAX@Z)
+     1>main.obj : error LNK2001: unresolved external symbol ___report_rangecheckfailure
+     1>main.obj : error LNK2001: unresolved external symbol "const type_info::`vftable'" (??_7type_info@@6B@)
+     1>main.obj : error LNK2001: unresolved external symbol "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z)
+     1>msvcprt.lib(locale0_implib.obj) : error LNK2001: unresolved external symbol "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z)
+     1>msvcprt.lib(newaop_s.obj) : error LNK2001: unresolved external symbol "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z)
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp__fputc
+     1>shprogram.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall std::bad_cast::~bad_cast(void)" (__imp_??1bad_cast@std@@UAE@XZ)
+     1>shprogram.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall std::bad_cast::bad_cast(char const *)" (__imp_??0bad_cast@std@@QAE@PBD@Z)
+     1>shprogram.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (__imp_??0bad_cast@std@@QAE@ABV01@@Z)
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp___unlock_file
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp__ungetc
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp__fgetpos
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp___fseeki64
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp__fflush
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp__fgetc
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp__fsetpos
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp__setvbuf
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp___lock_file
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp__memcpy_s
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp__fwrite
+     1>shprogram.obj : error LNK2001: unresolved external symbol __imp__fclose
+     1>Wheel.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete[](void *)" (??_V@YAXPAX@Z)
+     1>LINK : error LNK2001: unresolved external symbol _mainCRTStartup
+     1>glfw3.lib(win32_init.obj) : error LNK2001: unresolved external symbol _calloc
+     1>glfw3.lib(monitor.obj) : error LNK2001: unresolved external symbol _calloc
+     1>glfw3.lib(window.obj) : error LNK2001: unresolved external symbol _calloc
+     1>glfw3.lib(input.obj) : error LNK2001: unresolved external symbol _calloc
+     1>glfw3.lib(win32_window.obj) : error LNK2001: unresolved external symbol _calloc
+     1>glfw3.lib(wgl_context.obj) : error LNK2001: unresolved external symbol _calloc
+     1>glfw3.lib(winmm_joystick.obj) : error LNK2001: unresolved external symbol _free
+     1>glfw3.lib(win32_init.obj) : error LNK2001: unresolved external symbol _free
+     1>glfw3.lib(win32_monitor.obj) : error LNK2001: unresolved external symbol _free
+     1>glfw3.lib(monitor.obj) : error LNK2001: unresolved external symbol _free
+     1>glfw3.lib(window.obj) : error LNK2001: unresolved external symbol _free
+     1>glfw3.lib(input.obj) : error LNK2001: unresolved external symbol _free
+     1>glfw3.lib(win32_window.obj) : error LNK2001: unresolved external symbol _free
+     1>glfw3.lib(wgl_context.obj) : error LNK2001: unresolved external symbol _free
+     1>glfw3.lib(win32_monitor.obj) : error LNK2001: unresolved external symbol _memset
+     1>glfw3.lib(window.obj) : error LNK2001: unresolved external symbol _memset
+     1>glfw3.lib(init.obj) : error LNK2001: unresolved external symbol _memset
+     1>glfw3.lib(win32_window.obj) : error LNK2001: unresolved external symbol _memset
+     1>glfw3.lib(win32_init.obj) : error LNK2001: unresolved external symbol _memset
+     1>glfw3.lib(wgl_context.obj) : error LNK2001: unresolved external symbol ___security_cookie
+     1>glfw3.lib(winmm_joystick.obj) : error LNK2001: unresolved external symbol ___security_cookie
+     1>glfw3.lib(win32_monitor.obj) : error LNK2001: unresolved external symbol ___security_cookie
+     1>glfw3.lib(monitor.obj) : error LNK2001: unresolved external symbol ___security_cookie
+     1>glfw3.lib(window.obj) : error LNK2001: unresolved external symbol ___security_cookie
+     1>glfw3.lib(init.obj) : error LNK2001: unresolved external symbol ___security_cookie
+     1>glfw3.lib(context.obj) : error LNK2001: unresolved external symbol ___security_cookie
+     1>glfw3.lib(win32_window.obj) : error LNK2001: unresolved external symbol ___security_cookie
+     1>glfw3.lib(win32_time.obj) : error LNK2001: unresolved external symbol __fltused
+     1>glfw3.lib(monitor.obj) : error LNK2001: unresolved external symbol __fltused
+     1>glfw3.lib(window.obj) : error LNK2001: unresolved external symbol __fltused
+     1>glfw3.lib(input.obj) : error LNK2001: unresolved external symbol __fltused
+     1>glfw3.lib(win32_window.obj) : error LNK2001: unresolved external symbol __fltused
+     1>glfw3.lib(winmm_joystick.obj) : error LNK2001: unresolved external symbol __fltused
+     1>glfw3.lib(init.obj) : error LNK2001: unresolved external symbol _vsnprintf
+     1>glfw3.lib(init.obj) : error LNK2001: unresolved external symbol __chkstk
+     1>glfw3.lib(context.obj) : error LNK2001: unresolved external symbol _strncmp
+     1>glfw3.lib(context.obj) : error LNK2001: unresolved external symbol _strstr
+     1>glfw3.lib(context.obj) : error LNK2001: unresolved external symbol _sscanf
+     1>glfw3.lib(win32_window.obj) : error LNK2001: unresolved external symbol _memcpy
+     1>glfw3.lib(win32_time.obj) : error LNK2001: unresolved external symbol __dtoul3
+     1>glfw3.lib(win32_time.obj) : error LNK2001: unresolved external symbol __ultod3
+     1>glfw3.lib(win32_monitor.obj) : error LNK2001: unresolved external symbol _realloc
+     1>glfw3.lib(monitor.obj) : error LNK2001: unresolved external symbol __strdup
+     1>glfw3.lib(monitor.obj) : error LNK2001: unresolved external symbol _qsort
+     1>glfw3.lib(monitor.obj) : error LNK2001: unresolved external symbol __libm_sse2_pow_precise
+     1>soil.lib(SOIL.obj) : error LNK2001: unresolved external symbol __imp__free
+     1>soil.lib(SOIL.obj) : error LNK2001: unresolved external symbol __imp__malloc
+     1>soil.lib(SOIL.obj) : error LNK2001: unresolved external symbol __imp__strstr
+     1>soil.lib(SOIL.obj) : error LNK2001: unresolved external symbol __imp__fopen
+     1>soil.lib(SOIL.obj) : error LNK2001: unresolved external symbol __imp__fread
+     1>soil.lib(SOIL.obj) : error LNK2001: unresolved external symbol __imp__ftell
+     1>soil.lib(SOIL.obj) : error LNK2001: unresolved external symbol __imp__fseek
+     1>soil.lib(stb_image_aug.obj) : error LNK2001: unresolved external symbol __imp__feof
+     1>soil.lib(stb_image_aug.obj) : error LNK2001: unresolved external symbol __imp__strncmp
+     1>soil.lib(stb_image_aug.obj) : error LNK2001: unresolved external symbol __imp__ldexp
+     1>soil.lib(stb_image_aug.obj) : error LNK2001: unresolved external symbol __imp__strtol
+     1>soil.lib(stb_image_aug.obj) : error LNK2001: unresolved external symbol __imp__realloc
+     1>C:\Users\Michał\Documents\Visual Studio 2013\Projects\kola_lokomotywy\Release\kola_lokomotywy.exe : fatal error LNK1120: 60 unresolved externals
+     1>Done Building Project "C:\Users\Michał\Documents\Visual Studio 2013\Projects\kola_lokomotywy\kola_lokomotywy.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.15
