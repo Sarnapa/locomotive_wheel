@@ -168,10 +168,10 @@ int main()
 		GLfloat groundVertex[] =
 		{
 			-1.0f, -1.0f, -0.25f,  0.0f, 0.0f,  0.0f, 0.0f, 1.0f,
-			1.0f, -1.0f, -0.25f,  1.0f, 0.0f,  0.0f, 0.0f, 1.0f,
-			1.0f, 1.0f, -0.25f,  1.0f, 1.0f,  0.0f, 0.0f, 1.0f,
-			1.0f, 1.0f, -0.25f,  1.0f, 1.0f,  0.0f, 0.0f, 1.0f,
-			-1.0f, 1.0f, -0.25f,  0.0f, 1.0f,  0.0f, 0.0f, 1.0f,
+			1.0f, -1.0f, -0.25f,  3.0f, 0.0f,  0.0f, 0.0f, 1.0f,
+			1.0f, 1.0f, -0.25f,  3.0f, 3.0f,  0.0f, 0.0f, 1.0f,
+			1.0f, 1.0f, -0.25f,  3.0f, 3.0f,  0.0f, 0.0f, 1.0f,
+			-1.0f, 1.0f, -0.25f,  0.0f, 3.0f,  0.0f, 0.0f, 1.0f,
 			-1.0f, -1.0f, -0.25f,  0.0f, 0.0f,  0.0f, 0.0f, 1.0f
 
 		};
@@ -444,7 +444,7 @@ int main()
 				glm::mat4 model2;
 				model2 = glm::translate(model2, basesWheelsPosition[i]);
 				model2 = glm::rotate(model2, glm::radians(rotationDir * 90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-				model2 = glm::rotate(model2, (GLfloat)glfwGetTime() * glm::radians(-60.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+				model2 = glm::rotate(model2, (GLfloat)glfwGetTime() * glm::radians(rotationDir * -60.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 				glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model2));
 				glDrawArrays(GL_TRIANGLE_FAN, 0, (CYLINDER_BASE_VERTICES_COUNT + 2));
 			}
